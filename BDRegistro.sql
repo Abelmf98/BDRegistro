@@ -28,7 +28,7 @@ CREATE TABLE Usuario(
 CREATE TABLE Preferencia(
   idUsuario smallint UNSIGNED NOT NULL,
   idMinijuego tinyint UNSIGNED NOT NULL,
-  CONSTRAINT FK_idUsuario FOREIGN KEY (idUsario) REFERENCES usuario(idUsario),
+  CONSTRAINT FK_idUsuario FOREIGN KEY (idUsuario) REFERENCES usuario(idUsuario),
   CONSTRAINT FK_idMinijuego FOREIGN KEY (idMinijuego) REFERENCES miniJuego(idMinijuego),
-  CONSTRAINT PK_preferencia PRIMARY KEY (idUsario, idMinijuego)
+  CONSTRAINT PK_preferencia PRIMARY KEY (idUsuario, idMinijuego)
 );
