@@ -18,22 +18,19 @@
 
       if(!isset($_POST["Enviar"])){
         echo '<form action="#" method="POST">';
-          echo '<label>Nombre';
-            echo ' <input type="text" name="nombre"></br>';
-          echo '</label>';
-          echo '<label>Apellido';
-            echo ' <input type="text" name="apellidos"></br>';
-          echo '</label>';
-          echo '</label>Usuario';
-            echo ' <input type="text" name="usuario"></br>';
-          echo '<label>Correo';
-            echo ' <input type="email" name="correo"></br>';
-          echo '</label>';
+          echo '<label for="nombre">Nombre</label>';
+          echo ' <input type="text" name="nombre"></br>';
+          echo '<label for="apellido">Apellido</label>';
+          echo ' <input type="text" name="apellidos"></br>';
+          echo '</label for="usuario">Usuario</label>';
+          echo ' <input type="text" name="usuario"></br>';
+          echo '<label for="correo">Correo</label>';
+          echo ' <input type="email" name="correo"></br>';
+          // echo '<input type="checkbox" name="preferencia">';
           echo '</br>';
           echo '<input type="submit" name="Enviar">';
         echo '</form>';
         echo '<br>';
-        echo '<a href="index.php">Volver a la página principal</a>';
       }
       ?>
     </main>
